@@ -767,6 +767,26 @@
             </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>pymma-internal</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <nexus.host>http://nexus.pymmainternal:8081</nexus.host>
+            </properties>
+        </profile>
+        <profile>
+            <id>pymma-web</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <nexus.host>https://nexus.pymma-software.net</nexus.host>
+            </properties>
+        </profile>
+    </profiles>
     <distributionManagement>
         <snapshotRepository>
             <id>pymma-snapshot</id>
