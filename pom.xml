@@ -738,7 +738,7 @@
         <profile>
             <id>pymma-internal</id>
             <activation>
-                <activeByDefault>false</activeByDefault>
+                <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
                 <nexus.host>http://nexus.pymmainternal:8081</nexus.host>
@@ -747,7 +747,7 @@
         <profile>
             <id>pymma-web</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
                 <nexus.host>https://nexus.pymma-software.net</nexus.host>
