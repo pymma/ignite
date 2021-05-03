@@ -767,4 +767,14 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>pymma-snapshot</id>
+            <url>${nexus.host}/repository/opensource-maven</url>
+        </snapshotRepository>
+        <repository>
+            <id>pymma-release</id>
+            <url>${nexus.host}/repository/opensource-maven</url>
+        </repository>
+    </distributionManagement>
 </project>
